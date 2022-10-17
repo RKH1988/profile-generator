@@ -13,3 +13,18 @@ test('checks that employee name was created',()=>{
     const employee = new Employee('name',1,'myemail@company.com');
     expect (employee.getName()).toEqual(expect.any(String));
 });
+
+test('checks that employee id was created',()=>{
+    const employee = new Employee('name',1,'myemail@company.com');
+    expect (employee.getId()).toEqual(expect.any(String));
+});
+
+test('checks that employee email was created',()=>{
+    const employee = new Employee('name',1,'myemail@company.com');
+    expect(employee.getEmail()).toEqual(expect.any(String));
+});
+
+test('checks that role is equal to Employee',()=>{
+    const employee = new Employee('name',1,'myemail@company.com');
+    expect(employee.getRole()).toBe('Employee');
+});
